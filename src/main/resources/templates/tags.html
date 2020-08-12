@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" >
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+
+    <!--导航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <!--stackable是为了响应手机移动端的布局，屏幕小会堆叠-->
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="active m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search..">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--定义一个按钮(显示导航分类)在手机端出现，非手机端不要出现-->
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show"><i class="sidebar icon"></i></a>
+    </nav>
+
+    <!--中间内容部分-->
+    <div class="m-container-small m-padded-tb-big">
+        <div class="ui container">
+            <!--头部-->
+            <div class="ui top attached segment">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <h3 class="ui teal header">分类</h3>
+                    </div>
+                    <div class="right aligned column">
+                        共 <h2 class="ui orange header m-inline-block m-text-thin"> 14 </h2> 个
+                    </div>
+                </div>
+            </div>
+            <!--所有标签名-->
+            <div class="ui attached segment m-padded-tb-large">
+                <a href="#" target="_blank" class="ui teal basic left pointing large label m-margin-tb-tiny">
+                    方法论
+                    <div class="detail">23</div>
+                </a>
+                <a href="#" target="_blank" class="ui basic left pointing large label m-margin-tb-tiny">
+                    方法论
+                    <div class="detail">23</div>
+                </a>
+                <a href="#" target="_blank" class="ui basic left pointing large label m-margin-tb-tiny">
+                    方法论
+                    <div class="detail">23</div>
+                </a>
+                <a href="#" target="_blank" class="ui basic left pointing large label m-margin-tb-tiny">
+                    方法论
+                    <div class="detail">23</div>
+                </a>
+                <a href="#" target="_blank" class="ui basic left pointing large label m-margin-tb-tiny">
+                    方法论
+                    <div class="detail">23</div>
+                </a>
+            </div>
+
+            <!--每种类型对应的博客列表-->
+            <div class="ui top attached teal segment">
+                <div class="ui attached segment">
+                    <!-- 一篇博客的分区 -->
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <!--若加上 mobile reversed 在手机端会把图片和文字换位置，图片放上面-->
+                        <div class="ui stackable grid">
+                            <!--本篇博客文章内容-->
+                            <div class="ui eleven wide column">
+                                <h3 class="ui header">Spring Boot教程</h3>
+                                <p class="m-text">Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。</p>
+                                <div class="ui grid">
+                                    <div class="row">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/100/367/267" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">张娜</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-8-7
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>236
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">JavaEE框架</a>
+                                        </div>
+                                    </div>
+                                    <!--本篇博客的所有标签-->
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="ui basic teal left pointing label m-padded-mini m-text-thin">方法论</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--本篇博客的图片-->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1002/367/267" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <!--若加上 mobile reversed 在手机端会把图片和文字换位置，图片放上面-->
+                        <div class="ui stackable grid">
+                            <!--本篇博客文章内容-->
+                            <div class="ui eleven wide column">
+                                <h3 class="ui header">Spring Boot教程</h3>
+                                <p class="m-text">Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。</p>
+                                <div class="ui grid">
+                                    <div class="row">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/100/367/267" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">张娜</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-8-7
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>236
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">JavaEE框架</a>
+                                        </div>
+                                    </div>
+                                    <!--本篇博客的所有标签-->
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="ui basic teal left pointing label m-padded-mini m-text-thin">方法论</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--本篇博客的图片-->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1002/367/267" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <!--若加上 mobile reversed 在手机端会把图片和文字换位置，图片放上面-->
+                        <div class="ui stackable grid">
+                            <!--本篇博客文章内容-->
+                            <div class="ui eleven wide column">
+                                <h3 class="ui header">Spring Boot教程</h3>
+                                <p class="m-text">Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。</p>
+                                <div class="ui grid">
+                                    <div class="row">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/100/367/267" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">张娜</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-8-7
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>236
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">JavaEE框架</a>
+                                        </div>
+                                    </div>
+                                    <!--本篇博客的所有标签-->
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="ui basic teal left pointing label m-padded-mini m-text-thin">方法论</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--本篇博客的图片-->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1002/367/267" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <!--若加上 mobile reversed 在手机端会把图片和文字换位置，图片放上面-->
+                        <div class="ui stackable grid">
+                            <!--本篇博客文章内容-->
+                            <div class="ui eleven wide column">
+                                <h3 class="ui header">Spring Boot教程</h3>
+                                <p class="m-text">Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。</p>
+                                <div class="ui grid">
+                                    <div class="row">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/100/367/267" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">张娜</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-8-7
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>236
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">JavaEE框架</a>
+                                        </div>
+                                    </div>
+                                    <!--本篇博客的所有标签-->
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="ui basic teal left pointing label m-padded-mini m-text-thin">方法论</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--本篇博客的图片-->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1002/367/267" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <!--若加上 mobile reversed 在手机端会把图片和文字换位置，图片放上面-->
+                        <div class="ui stackable grid">
+                            <!--本篇博客文章内容-->
+                            <div class="ui eleven wide column">
+                                <h3 class="ui header">Spring Boot教程</h3>
+                                <p class="m-text">Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。</p>
+                                <div class="ui grid">
+                                    <div class="row">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/100/367/267" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">张娜</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-8-7
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>236
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">JavaEE框架</a>
+                                        </div>
+                                    </div>
+                                    <!--本篇博客的所有标签-->
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="ui basic teal left pointing label m-padded-mini m-text-thin">方法论</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--本篇博客的图片-->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1002/367/267" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <!--若加上 mobile reversed 在手机端会把图片和文字换位置，图片放上面-->
+                        <div class="ui stackable grid">
+                            <!--本篇博客文章内容-->
+                            <div class="ui eleven wide column">
+                                <h3 class="ui header">Spring Boot教程</h3>
+                                <p class="m-text">Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。</p>
+                                <div class="ui grid">
+                                    <div class="row">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/100/367/267" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">张娜</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-8-7
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>236
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">JavaEE框架</a>
+                                        </div>
+                                    </div>
+                                    <!--本篇博客的所有标签-->
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="ui basic teal left pointing label m-padded-mini m-text-thin">方法论</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--本篇博客的图片-->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1002/367/267" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded vertical segment m-padded-tb-large">
+                        <!--若加上 mobile reversed 在手机端会把图片和文字换位置，图片放上面-->
+                        <div class="ui stackable grid">
+                            <!--本篇博客文章内容-->
+                            <div class="ui eleven wide column">
+                                <h3 class="ui header">Spring Boot教程</h3>
+                                <p class="m-text">Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。</p>
+                                <div class="ui grid">
+                                    <div class="row">
+                                        <div class="eleven wide column">
+                                            <div class="ui mini horizontal link list">
+                                                <div class="item">
+                                                    <img src="https://picsum.photos/id/100/367/267" alt="" class="ui avatar image">
+                                                    <div class="content"><a href="#" class="header">张娜</a></div>
+                                                </div>
+                                                <div class="item">
+                                                    <i class="calendar icon"></i>2020-8-7
+                                                </div>
+                                                <div class="item">
+                                                    <i class="eye icon"></i>236
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right aligned five wide column">
+                                            <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">JavaEE框架</a>
+                                        </div>
+                                    </div>
+                                    <!--本篇博客的所有标签-->
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="ui basic teal left pointing label m-padded-mini m-text-thin">方法论</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--本篇博客的图片-->
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/id/1002/367/267" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--博客底部(放上一页下一页的按钮)-->
+            <div class="ui bottom attached segment">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <a href="#" class="ui mini teal basic button">上一页</a>
+                    </div>
+                    <div class="right aligned column">
+                        <a href="#" class="ui mini teal basic button">上一页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!--底部-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事</a>
+                        <a href="#" class="item">用户故事</a>
+                        <a href="#" class="item">用户故事</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email: zhangna_1223@139.com</a>
+                        <a href="#" class="item">qq:1781292907</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Blog</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，会分享关于编程的任何内容</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright@ 2020-2021 Designed by Zhang na</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+
+    <script>
+        $('.menu.toggle').click(function (){
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+    </script>
+
+
+</body>
+</html>
